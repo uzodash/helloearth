@@ -14,6 +14,9 @@ import { NameListService } from '../shared/index';
 export class HomeComponent implements OnInit {
 
   newName: string = '';
+
+  selectedName: string = '';
+
   errorMessage: string;
   names: any[] = [];
 
@@ -52,6 +55,11 @@ export class HomeComponent implements OnInit {
     this.names.push(this.newName);
     this.newName = '';
     return false;
+  }
+
+  onNameSelect(name:string):void{
+    this.selectedName = name;
+    console.log(name);
   }
 
 }
