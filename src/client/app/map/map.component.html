@@ -1,6 +1,4 @@
-<p>Howdy! Here's a list of awesome computer scientists. Do you know any others? Add to the list yourself.</p>
-
-<form (submit)="addName()">
+<!--<form (submit)="addName()">
   <input [(ngModel)]="newName" name="newName" placeholder="Awesome Computer Scientist">
   <button type="submit">Add</button>
 </form>
@@ -9,4 +7,7 @@
   <li *ngFor="let name of names" (click)="onNameSelect(name)" [class.selected]="name === selectedName">{{name}}</li>
 </ul>
 <br>
-<h2 *ngIf="selectedName">{{selectedName}} is the selected name</h2>
+<h2 *ngIf="selectedName">{{selectedName}} is the selected name</h2>-->
+
+
+<div id="map" class="map"></div>
